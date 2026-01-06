@@ -66,7 +66,7 @@ async function exchange(code, verifier) {
 }
 
 /**
- * @type {import('@opencode-ai/plugin').Plugin}
+ * @type {import('@anthropic-ai/claw').Plugin}
  */
 export async function AnthropicAuthPlugin({ client }) {
   return {
