@@ -73,7 +73,7 @@ export async function AnthropicAuthPlugin({ client }) {
     "experimental.chat.system.transform": (input, output) => {
       if (input.model?.providerID === "anthropic") {
         output.system.unshift(
-          "You are Claude Code, Anthropic's official CLI for Claude.",
+          "You are Claude Code, Anthropic's official CLI for Claude.\n\n",
         );
       }
     },
